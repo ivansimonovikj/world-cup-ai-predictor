@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup Predictor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <h1>World Cup 2026: Data-Driven Intelligence</h1>
+        <p>Real-time probability analysis and expected goals (xG) metrics.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls-section">
+        <div class="date-picker-wrapper">
+          <label for="datePicker">Select Match Date:</label>
+          <input type="date" id="datePicker" value="2026-06-21" />
+        </div>
+      </section>
+
+      <section class="matches-section">
+        <div id="matchContainer" class="grid-container">
+          <p class="placeholder-text">Select a date to load matches.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
