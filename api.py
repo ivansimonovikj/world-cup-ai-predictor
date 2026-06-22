@@ -1,10 +1,9 @@
-from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from database import client
 from predict_custom import get_prediction_logic
-from fastapi.responses import FileResponse
 
 app = FastAPI()
 
@@ -33,10 +32,5 @@ def get_matches(date: str):
 def predict(match: MatchPrediction):
     return get_prediction_logic(match.team_a, match.team_b)
 
-# 5. Serve the main HTML page at the root URL
-@app.get("/")
-def serve_homepage():
-    return FileResponse("static/index.html")
-
-# 6. Serve the CSS and JS assets under a dedicated /static path
+# 5. Serve the frontend HTML, CSS, and JS perfectly
 app.mount("/", StaticFiles(directory="static", html=True), name="static")
