@@ -1,7 +1,7 @@
 const API_BASE_URL =
   window.location.hostname === "localhost"
     ? "http://127.0.0.1:8000"
-    : "https://your-app-name.onrender.com"; // Replace with your actual live URL later
+    : "https://world-cup-ai-predictor.onrender.com/"; // Replace with your actual live URL later
 
 document.addEventListener("DOMContentLoaded", () => {
   const datePicker = document.getElementById("datePicker");
