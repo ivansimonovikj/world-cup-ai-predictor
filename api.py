@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles # Added this import!
 from pydantic import BaseModel
 from database import client
 from predict_custom import get_prediction_logic
@@ -30,3 +31,6 @@ def get_matches(date: str):
 @app.post("/predict")
 def predict(match: MatchPrediction):
     return get_prediction_logic(match.team_a, match.team_b)
+
+# 5. Serve the frontend (Must be at the very bottom!)
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
