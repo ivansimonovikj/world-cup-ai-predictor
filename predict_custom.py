@@ -97,7 +97,9 @@ def get_prediction_logic(team_a_name, team_b_name):
     margin = 0.05
     diff = abs(fA - fB)
 
-    if fA > fB and diff <= margin:
+    if fD > fA and fD > fB:
+        pred = "Draw"
+    elif fA > fB and diff <= margin:
         pred = f"{team_a_name} Wins or Draw"
     elif fB > fA and diff <= margin:
         pred = f"{team_b_name} Wins or Draw"

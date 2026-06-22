@@ -4,6 +4,7 @@ from fastapi.staticfiles import StaticFiles # Added this import!
 from pydantic import BaseModel
 from database import client
 from predict_custom import get_prediction_logic
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 
@@ -32,5 +33,10 @@ def get_matches(date: str):
 def predict(match: MatchPrediction):
     return get_prediction_logic(match.team_a, match.team_b)
 
-# 5. Serve the frontend (Must be at the very bottom!)
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+# 5. Serve the main HTML page at the root URL
+@app.get("/")
+def serve_homepage():
+    return FileResponse("static/index.html")
+
+# 6. Serve the CSS and JS assets under a dedicated /static path
+app.mount("/static", StaticFiles(directory="static"), name="static")
