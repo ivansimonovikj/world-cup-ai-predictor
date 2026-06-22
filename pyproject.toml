@@ -1,2 +1,6 @@
+[project]
+name = "world-cup-ai-predictor"
+version = "0.1.0"
+
 [tool.vercel]
 entrypoint = "api:app"
