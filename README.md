@@ -1,5 +1,7 @@
 # 🏆 World Cup AI Predictor
 
+**Live Demo:** [world-cup-ai-predictor.onrender.com](https://world-cup-ai-predictor.onrender.com/)
+
 > A full-stack, AI-driven sports analytics platform that predicts match outcomes, win probabilities, and goal metrics using an ensemble machine learning architecture.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
