@@ -19,7 +19,7 @@ async function fetchMatchesByDate(date) {
   container.innerHTML = '<p class="placeholder-text">Loading match data...</p>';
 
   try {
-    const response = await fetch(`${API_BASE_URL}/matches?date=${date}`);
+    const response = await fetch(`/matches?date=${date}`);
     if (!response.ok) throw new Error("Network response was not ok");
 
     const data = await response.json();
@@ -75,7 +75,7 @@ async function predictMatch(event, teamA, teamB, resultElementId) {
   btn.disabled = true;
 
   try {
-    const response = await fetch(`${API_BASE_URL}/predict`, {
+    const response = await fetch("/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ team_a: teamA, team_b: teamB }),
