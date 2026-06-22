@@ -1,6 +1,6 @@
+from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles # Added this import!
 from pydantic import BaseModel
 from database import client
 from predict_custom import get_prediction_logic
@@ -39,4 +39,4 @@ def serve_homepage():
     return FileResponse("static/index.html")
 
 # 6. Serve the CSS and JS assets under a dedicated /static path
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
