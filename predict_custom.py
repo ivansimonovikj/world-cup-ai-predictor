@@ -117,7 +117,7 @@ def get_prediction_logic(team_a_name, team_b_name):
         "prob_a": round(fA*100, 1), 
         "prob_b": round(fB*100, 1),
         "prob_draw": round(fD*100, 1), 
-        "btts": "YES" if (xG_A > 1.25 and xG_B > 1.25) else "NO",
-        "over_2_5": "YES" if total_g > 2.8 else "NO", 
+        "btts": "YES" if (xG_A > 1.1 and xG_B > 1.1) else "NO",
+        "over_2_5": "YES" if total_g > 2.6 else "NO", 
         "prediction": pred
     }
