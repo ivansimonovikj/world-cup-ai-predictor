@@ -95,18 +95,26 @@ def get_prediction_logic(team_a_name, team_b_name):
     total_g = xG_A + xG_B
 
     margin = 0.05
-    diff = abs(fA - fB)
+    
+    # Calculate differences between the outcomes
+    diff_AB = abs(fA - fB)
+    diff_AD = abs(fA - fD)
+    diff_BD = abs(fB - fD)
 
     if fD > fA and fD > fB:
         pred = "Draw"
-    elif fA > fB and diff <= margin:
-        pred = f"{team_a_name} Wins or Draw"
-    elif fB > fA and diff <= margin:
-        pred = f"{team_b_name} Wins or Draw"
     elif fA > fB:
-        pred = f"{team_a_name} Wins"
+        # If A is close to B, OR A is close to a Draw, it's a Double Chance
+        if diff_AB <= margin or diff_AD <= margin:
+            pred = f"{team_a_name} Wins or Draws"
+        else:
+            pred = f"{team_a_name} Wins"
     elif fB > fA:
-        pred = f"{team_b_name} Wins"
+        # If B is close to A, OR B is close to a Draw, it's a Double Chance
+        if diff_AB <= margin or diff_BD <= margin:
+            pred = f"{team_b_name} Wins or Draws"
+        else:
+            pred = f"{team_b_name} Wins"
     else:
         pred = "Draw"
 
@@ -117,7 +125,7 @@ def get_prediction_logic(team_a_name, team_b_name):
         "prob_a": round(fA*100, 1), 
         "prob_b": round(fB*100, 1),
         "prob_draw": round(fD*100, 1), 
-        "btts": "YES" if (xG_A > 1.1 and xG_B > 1.1) else "NO",
-        "over_2_5": "YES" if total_g > 2.6 else "NO", 
+        "btts": "YES" if (xG_A > 1.2 and xG_B > 1.2) else "NO",
+        "over_2_5": "YES" if total_g > 2.7 else "NO", 
         "prediction": pred
     }
