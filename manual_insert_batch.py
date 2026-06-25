@@ -43,7 +43,25 @@ def insert_batch_matches():
         {"home": "Netherlands", "away": "Sweden", "home_g": 5, "away_g": 1},
         {"home": "Germany", "away": "Ivory Coast", "home_g": 2, "away_g": 1},
         {"home": "Ecuador", "away": "Curaçao", "home_g": 0, "away_g": 0},
-        {"home": "Tunisia", "away": "Japan", "home_g": 0, "away_g": 4}
+        {"home": "Tunisia", "away": "Japan", "home_g": 0, "away_g": 4},
+        {"home": "Spain", "away": "Saudi Arabia", "home_g": 4, "away_g": 0},
+        {"home": "Belgium", "away": "Iran", "home_g": 0, "away_g": 0},
+        {"home": "Uruguay", "away": "Cabo Verde", "home_g": 2, "away_g": 2},
+        {"home": "New Zealand", "away": "Egypt", "home_g": 1, "away_g": 3},
+        {"home": "Argentina", "away": "Austria", "home_g": 2, "away_g": 0},
+        {"home": "France", "away": "Iraq", "home_g": 3, "away_g": 0},
+        {"home": "Norway", "away": "Senegal", "home_g": 3, "away_g": 2},
+        {"home": "Jordan", "away": "Algeria", "home_g": 1, "away_g": 2},
+        {"home": "Portugal", "away": "Uzbekistan", "home_g": 5, "away_g": 0},
+        {"home": "England", "away": "Ghana", "home_g": 0, "away_g": 0},
+        {"home": "Panama", "away": "Croatia", "home_g": 0, "away_g": 1},
+        {"home": "Colombia", "away": "DR Congo", "home_g": 1, "away_g": 0},
+        {"home": "Switzerland", "away": "Canada", "home_g": 2, "away_g": 1},
+        {"home": "Bosnia and Herzegovina", "away": "Qatar", "home_g": 3, "away_g": 1},
+        {"home": "Morocco", "away": "Haiti", "home_g": 4, "away_g": 2},
+        {"home": "Scotland", "away": "Brazil", "home_g": 0, "away_g": 3},
+        {"home": "Czech Republic", "away": "Mexico", "home_g": 0, "away_g": 3},
+        {"home": "South Africa", "away": "South Korea", "home_g": 1, "away_g": 0},
     ]
 
     print(f"Starting batch injection of {len(matches)} matches...")
