@@ -45,7 +45,119 @@ group_stage_data = [
   {"date": "2026-06-27", "team_a": "Colombia", "team_b": "Portugal", "kickoff_et": "7:30 PM", "stadium": "Miami Stadium"},
   {"date": "2026-06-27", "team_a": "DR Congo", "team_b": "Uzbekistan", "kickoff_et": "7:30 PM", "stadium": "Atlanta Stadium"},
   {"date": "2026-06-27", "team_a": "Algeria", "team_b": "Austria", "kickoff_et": "10:00 PM", "stadium": "Kansas City Stadium"},
-  {"date": "2026-06-27", "team_a": "Jordan", "team_b": "Argentina", "kickoff_et": "10:00 PM", "stadium": "Dallas Stadium"}
+  {"date": "2026-06-27", "team_a": "Jordan", "team_b": "Argentina", "kickoff_et": "10:00 PM", "stadium": "Dallas Stadium"},
+  {
+    "date": "2026-06-28",
+    "team_a": "South Africa",
+    "team_b": "Canada",
+    "kickoff_et": "3:00 PM",
+    "stadium": "Los Angeles Stadium"
+  },
+  {
+    "date": "2026-06-29",
+    "team_a": "Brazil",
+    "team_b": "Japan",
+    "kickoff_et": "1:00 PM",
+    "stadium": "Houston Stadium"
+  },
+  {
+    "date": "2026-06-29",
+    "team_a": "Germany",
+    "team_b": "Paraguay",
+    "kickoff_et": "4:30 PM",
+    "stadium": "Boston Stadium"
+  },
+  {
+    "date": "2026-06-29",
+    "team_a": "Netherlands",
+    "team_b": "Morocco",
+    "kickoff_et": "9:00 PM",
+    "stadium": "Monterrey Stadium"
+  },
+  {
+    "date": "2026-06-30",
+    "team_a": "Ivory Coast",
+    "team_b": "Norway",
+    "kickoff_et": "1:00 PM",
+    "stadium": "Dallas Stadium"
+  },
+  {
+    "date": "2026-06-30",
+    "team_a": "France",
+    "team_b": "Sweden",
+    "kickoff_et": "5:00 PM",
+    "stadium": "New York/New Jersey Stadium"
+  },
+  {
+    "date": "2026-06-30",
+    "team_a": "Mexico",
+    "team_b": "Ecuador",
+    "kickoff_et": "9:00 PM",
+    "stadium": "Mexico City Stadium"
+  },
+  {
+    "date": "2026-07-01",
+    "team_a": "England",
+    "team_b": "DR Congo",
+    "kickoff_et": "12:00 PM",
+    "stadium": "Atlanta Stadium"
+  },
+  {
+    "date": "2026-07-01",
+    "team_a": "Belgium",
+    "team_b": "Senegal",
+    "kickoff_et": "4:00 PM",
+    "stadium": "Seattle Stadium"
+  },
+  {
+    "date": "2026-07-01",
+    "team_a": "USA",
+    "team_b": "Bosnia and Herzegovina",
+    "kickoff_et": "8:00 PM",
+    "stadium": "San Francisco Bay Area Stadium"
+  },
+  {
+    "date": "2026-07-02",
+    "team_a": "Spain",
+    "team_b": "Austria",
+    "kickoff_et": "3:00 PM",
+    "stadium": "Los Angeles Stadium"
+  },
+  {
+    "date": "2026-07-02",
+    "team_a": "Portugal",
+    "team_b": "Croatia",
+    "kickoff_et": "7:00 PM",
+    "stadium": "Toronto Stadium"
+  },
+  {
+    "date": "2026-07-02",
+    "team_a": "Switzerland",
+    "team_b": "Algeria",
+    "kickoff_et": "11:00 PM",
+    "stadium": "BC Place Vancouver"
+  },
+  {
+    "date": "2026-07-03",
+    "team_a": "Australia",
+    "team_b": "Egypt",
+    "kickoff_et": "2:00 PM",
+    "stadium": "Dallas Stadium"
+  },
+  {
+    "date": "2026-07-03",
+    "team_a": "Argentina",
+    "team_b": "Cape Verde",
+    "kickoff_et": "6:00 PM",
+    "stadium": "Miami Stadium"
+  },
+  {
+    "date": "2026-07-03",
+    "team_a": "Colombia",
+    "team_b": "Ghana",
+    "kickoff_et": "8:30 PM",
+    "stadium": "Kansas City Stadium"
+  }
 ]
 
 # 3. Add to the collection
